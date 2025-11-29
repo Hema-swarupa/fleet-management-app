@@ -5,15 +5,16 @@ let category=document.getElementById("category").value;
 let driver=document.getElementById("driver").value;
 let availability=document.getElementById("availability").value;
 let card=document.createElement("div");
-card.innerHTML;{
-    <img src="https://coding-platform.s3.amazonaws.com/dev/lms/tickets/5e80fcb6-3f8e-480c-945b-30a5359eb40e/JNmYjkVr3WOjsrbu.png"/>;
-    <h5>Reg No of Vehicle: ${regno}</h5>;
-    <h5>category: ${category}</h5>;
-    <h5>driver: ${driver}</h5>;
-    <h5>availability: ${availability}</h5>;
+card.innerHTML=`
+    <img src="https://coding-platform.s3.amazonaws.com/dev/lms/tickets/5e80fcb6-3f8e-480c-945b-30a5359eb40e/JNmYjkVr3WOjsrbu.png"/>
+    <h5>Reg No of Vehicle: ${regno}</h5>
+    <h5>category: ${category}</h5>
+    <h5>driver: ${driver}</h5>
+    <h5>availability: ${availability}</h5>`;
+    area[0].appendChild(card); 
 }
-area.appendChild(card);  
-}
+ 
+
 {/* <input type="text" id="regno" placeholder="Reg No of Vehicle"><br><br>
             <select id="category">
                  <option value="category">category</option>
